@@ -8,27 +8,27 @@ $MinZ = \sum_{i=1}^8 x_{i}^2$
 
 **Components of Algorithm**
 
-+ Seperation $\rightarrow {S}_{i} = -\sum_{j=1}^N(X-{X}_{j})$
++ Seperation $\rightarrow S_{i} = -\sum_{j=1}^N(X-{X}_{j})$
 
-+ Alignment $\rightarrow {A}_{i} = \frac{\sum_{j=1}^N {V}_{j}}{N}$
++ Alignment $\rightarrow A_{i} = \frac{\sum_{j=1}^N {V}_{j}}{N}$
 
-+ Cohesion $\rightarrow {C}_{i} = \frac{\sum_{j=1}^N {X}_{j}}{N}-X$
++ Cohesion $\rightarrow C_{i} = \frac{\sum_{j=1}^N {X}_{j}}{N}-X$
 
-+ Velocity $\rightarrow {V}_{i} = s \times {S}_{i} + a \times {A}_{i} + c \times {C}_{i}$
++ Velocity $\rightarrow V_{i} = s \times S_{i} + a \times A_{i} + c \times C_{i}$
 
-+ Food $\rightarrow {F}_{i} = {X}^{+}-X$
++ Food $\rightarrow F_{i} = X^{+}-X$
 
-+ Enemy $\rightarrow {E}_{i} = {X}^{-}+X$
++ Enemy $\rightarrow E_{i} = X^{-}+X$
 
 **Step And Position**
 
-+ Step $\rightarrow{\Delta X}_{t+1} = {V}_{i} + f \times {F}_{i} + e \times {E}_{i} + w \times {\Delta X}_{t}$
++ Step $\rightarrow \Delta X_{t+1} = V_{i} + f \times F_{i} + e \times E_{i} + w \times \Delta X_{t}$
 
-    + Position $\rightarrow{X}_{t+1} = {X}_{t} + {\Delta X}_{t+1}$
+    + Position $\rightarrow X_{t+1} = X_{t} + \Delta X_{t+1}$
 
 _If there is no neighbours,_
 
-+ Position $\rightarrow{X}_{t+1} = {X}_{t} + Léyv(d) \times {X}_{t+1}$
++ Position $\rightarrow X_{t+1} = X_{t} + Léyv(d) \times X_{t+1}$
 
 **Parameters of Algorithm**
 
