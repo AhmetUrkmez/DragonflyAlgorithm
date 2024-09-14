@@ -114,7 +114,7 @@ Benchmark <- function(...) {
                 "var.fitness" = var(fitness_values),
                 "min.fitness" = min(fitness_values),
                 "max.fitness" = max(fitness_values),
-                "time" = c(end-start)))
+                "time" = c(end - start)))
 }
 
 Benchmark()
